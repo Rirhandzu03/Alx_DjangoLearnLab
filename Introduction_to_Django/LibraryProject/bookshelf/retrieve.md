@@ -3,7 +3,6 @@
 ## Command:
 ```python
 from bookshelf.models import Book
-books = Book.objects.all() #Retrieve all book instances
-for book in books:
-    print(book)
-    
+book = Book.objects.get(title="1984")  # Retrieve the book instance
+print(book)  # Display the book's attributes
+
